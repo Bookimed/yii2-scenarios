@@ -1,8 +1,8 @@
 <?php
 
-namespace indigerd\scenariostests\validation\validator;
+namespace bookimed\scenariostests\validation\validator;
 
-use indigerd\scenarios\validation\validator\RequiredValidator;
+use bookimed\scenarios\validation\validator\RequiredValidator;
 use PHPUnit\Framework\TestCase;
 
 class RequiredValidatorTest  extends TestCase

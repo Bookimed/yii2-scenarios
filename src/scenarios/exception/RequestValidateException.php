@@ -1,6 +1,6 @@
 <?php
 
-namespace indigerd\scenarios\exception;
+namespace bookimed\scenarios\exception;
 
 use Throwable;
 use yii\web\Request;

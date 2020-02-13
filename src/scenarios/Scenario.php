@@ -1,14 +1,14 @@
 <?php
 
-namespace indigerd\scenarios;
+namespace bookimed\scenarios;
 
-use indigerd\scenarios\validation\validator\ValidatorInterface;
+use bookimed\scenarios\validation\validator\ValidatorInterface;
 use yii\base\Model;
 use yii\web\Request;
-use indigerd\scenarios\exception\ModelValidateException;
-use indigerd\scenarios\exception\RequestValidateException;
-use indigerd\scenarios\validation\factory\ValidatorFactory;
-use indigerd\scenarios\validation\factory\ValidatorCollectionFactory;
+use bookimed\scenarios\exception\ModelValidateException;
+use bookimed\scenarios\exception\RequestValidateException;
+use bookimed\scenarios\validation\factory\ValidatorFactory;
+use bookimed\scenarios\validation\factory\ValidatorCollectionFactory;
 
 class Scenario
 {

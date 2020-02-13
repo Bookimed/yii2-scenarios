@@ -1,8 +1,8 @@
 <?php
 
-namespace indigerd\scenarios\validation\collection;
+namespace bookimed\scenarios\validation\collection;
 
-use indigerd\scenarios\validation\validator\ValidatorInterface;
+use bookimed\scenarios\validation\validator\ValidatorInterface;
 
 class ValidatorCollection
 {

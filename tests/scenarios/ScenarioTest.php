@@ -6,14 +6,14 @@
  * Time: 14:32
  */
 
-namespace indigerd\scenariostests;
+namespace bookimed\scenariostests;
 
-use indigerd\scenarios\exception\RequestValidateException;
-use indigerd\scenarios\Scenario;
-use indigerd\scenarios\validation\factory\ValidatorCollectionFactory;
-use indigerd\scenarios\validation\factory\ValidatorFactory;
-use indigerd\scenarios\validation\validator\IntegerValidator;
-use indigerd\scenarios\validation\validator\RequiredValidator;
+use bookimed\scenarios\exception\RequestValidateException;
+use bookimed\scenarios\Scenario;
+use bookimed\scenarios\validation\factory\ValidatorCollectionFactory;
+use bookimed\scenarios\validation\factory\ValidatorFactory;
+use bookimed\scenarios\validation\validator\IntegerValidator;
+use bookimed\scenarios\validation\validator\RequiredValidator;
 use PHPUnit\Framework\TestCase;
 use yii\web\Request;
 

@@ -2,9 +2,9 @@
 require '../vendor/autoload.php';
 require('../vendor/yiisoft/yii2/Yii.php');
 
-use indigerd\scenarios\Scenario;
-use indigerd\scenarios\validation\factory\ValidatorFactory;
-use indigerd\scenarios\validation\factory\ValidatorCollectionFactory;
+use bookimed\scenarios\Scenario;
+use bookimed\scenarios\validation\factory\ValidatorFactory;
+use bookimed\scenarios\validation\factory\ValidatorCollectionFactory;
 
 define(YII_DEBUG, true);
 
@@ -29,6 +29,6 @@ $user->lastName = 'Doe';
 
 try {
     $scenario->validateModel($user);
-} catch (\indigerd\scenarios\exception\ModelValidateException $e) {
+} catch (\bookimed\scenarios\exception\ModelValidateException $e) {
     print_r($e->getModel()->getErrors());
 }

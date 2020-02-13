@@ -1,6 +1,6 @@
 <?php
 
-namespace indigerd\scenarios\filters;
+namespace bookimed\scenarios\filters;
 
 use Yii;
 use yii\base\Action;
@@ -8,10 +8,10 @@ use yii\base\ActionFilter;
 use yii\base\InvalidConfigException;
 use yii\web\Request;
 use yii\web\Response;
-use indigerd\scenarios\Scenario;
-use indigerd\scenarios\exception\RequestValidateException;
-use indigerd\scenarios\validation\factory\ValidatorCollectionFactory;
-use indigerd\scenarios\validation\factory\ValidatorFactory;
+use bookimed\scenarios\Scenario;
+use bookimed\scenarios\exception\RequestValidateException;
+use bookimed\scenarios\validation\factory\ValidatorCollectionFactory;
+use bookimed\scenarios\validation\factory\ValidatorFactory;
 
 class RequestFilter extends ActionFilter
 {

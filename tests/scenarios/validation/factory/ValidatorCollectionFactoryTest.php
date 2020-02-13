@@ -1,10 +1,10 @@
 <?php
 
-namespace indigerd\scenariostests\validation\factory;
+namespace bookimed\scenariostests\validation\factory;
 
-use indigerd\scenarios\validation\collection\ValidatorCollection;
+use bookimed\scenarios\validation\collection\ValidatorCollection;
 use PHPUnit\Framework\TestCase;
-use indigerd\scenarios\validation\factory\ValidatorCollectionFactory;
+use bookimed\scenarios\validation\factory\ValidatorCollectionFactory;
 
 class ValidatorCollectionFactoryTest extends TestCase
 {

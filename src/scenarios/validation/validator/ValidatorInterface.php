@@ -1,6 +1,6 @@
 <?php
 
-namespace indigerd\scenarios\validation\validator;
+namespace bookimed\scenarios\validation\validator;
 
 interface ValidatorInterface
 {

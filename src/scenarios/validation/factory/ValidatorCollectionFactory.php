@@ -1,9 +1,9 @@
 <?php
 
-namespace indigerd\scenarios\validation\factory;
+namespace bookimed\scenarios\validation\factory;
 
-use indigerd\scenarios\validation\collection\ValidatorCollection;
-use indigerd\scenarios\validation\validator\ValidatorInterface;
+use bookimed\scenarios\validation\collection\ValidatorCollection;
+use bookimed\scenarios\validation\validator\ValidatorInterface;
 
 class ValidatorCollectionFactory
 {

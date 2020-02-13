@@ -1,10 +1,10 @@
 <?php
 
-namespace indigerd\scenarios\validation\factory;
+namespace bookimed\scenarios\validation\factory;
 
-use indigerd\scenarios\validation\validator\IntegerValidator;
-use indigerd\scenarios\validation\validator\RequiredValidator;
-use indigerd\scenarios\validation\validator\ValidatorInterface;
+use bookimed\scenarios\validation\validator\IntegerValidator;
+use bookimed\scenarios\validation\validator\RequiredValidator;
+use bookimed\scenarios\validation\validator\ValidatorInterface;
 
 class ValidatorFactory
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace indigerd\scenariostests\validation\factory;
+namespace bookimed\scenariostests\validation\factory;
 
-use indigerd\scenarios\validation\validator\IntegerValidator;
+use bookimed\scenarios\validation\validator\IntegerValidator;
 use PHPUnit\Framework\TestCase;
-use indigerd\scenarios\validation\factory\ValidatorFactory;
+use bookimed\scenarios\validation\factory\ValidatorFactory;
 
 class ValidatorFactoryTest extends TestCase
 {

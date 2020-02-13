@@ -1,8 +1,8 @@
 <?php
 
-namespace indigerd\scenariostests\validation\validator;
+namespace bookimed\scenariostests\validation\validator;
 
-use indigerd\scenarios\validation\validator\IntegerValidator;
+use bookimed\scenarios\validation\validator\IntegerValidator;
 use PHPUnit\Framework\TestCase;
 
 class IntegerValidatorTest  extends TestCase
