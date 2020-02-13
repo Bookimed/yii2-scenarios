@@ -18,6 +18,12 @@ class Scenario
 
     protected $attributes = [];
 
+    private const METHOD_MAP = [
+        'body' => 'getBodyParams',
+        'headers' => 'getHeaders',
+        'query' => 'getQueryParams'
+    ];
+
     public function __construct(
         ValidatorFactory $validatorFactory,
         ValidatorCollectionFactory $validatorCollectionFactory,
@@ -70,13 +76,16 @@ class Scenario
         return true;
     }
 
-    public function validateRequest(Request $request, string $variables = 'body') : bool
+    public function validateRequest(Request $request, string $variables = 'body'): bool
     {
         $errors = [];
-        $context = ($variables == 'body' ? $request->getBodyParams() : $request->getQueryParams());
+        if (!in_array($variables, \array_keys(self::METHOD_MAP)) || !method_exists($request, self::METHOD_MAP[$variables])) {
+            throw new \RuntimeException('Unsupported variables: ' . $variables);
+        }
+        $context = $request->{self::METHOD_MAP[$variables]}();
         foreach ($this->attributes as $attribute => $validatorCollection) {
             $value = isset($context[$attribute]) ? $context[$attribute] : null;
-            if (!$validatorCollection->validate($value, $context)) {
+            if (!$validatorCollection->validate($value, (array)$context)) {
                 foreach ($validatorCollection->getMessages() as $message) {
                     $errors[$attribute][] = $message;
                 }
