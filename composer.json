@@ -1,5 +1,5 @@
 {
-  "name": "indigerd/yii2-scenarios",
+  "name": "bookimed/yii2-scenarios",
   "description": "Yii2 Validation Scanarios",
   "keywords": ["data validation", "validators", "validation scenarios"],
   "type": "library",
