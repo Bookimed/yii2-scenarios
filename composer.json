@@ -25,12 +25,12 @@
   },
   "autoload": {
     "psr-4": {
-      "indigerd\\scenarios\\": "src/scenarios"
+      "bookimed\\scenarios\\": "src/scenarios"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "indigerd\\scenariostests\\": "tests/scenarios"
+      "bookimed\\scenariostests\\": "tests/scenarios"
     }
   }
 }
